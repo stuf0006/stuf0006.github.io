@@ -1,0 +1,52 @@
+/* Global styles */
+body {
+    font-family: "Times New Roman", Times, serif; /* Change font family */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Header and footer styles */
+header, footer {
+    background-color: #FFC107; /* Same background color for both */
+}
+
+/* Site title styles */
+.site-title {
+    color: #4CAF50; /* Change color of the site title */
+}
+
+/* Image styles */
+#my-image {
+    box-shadow: 0 0 2px 1px black; /* Add box-shadow to the image */
+    max-width: 1000px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin: 0 auto; /* Center the image  in the containing element */
+}
+
+/* List styles */
+ol {
+    list-style-type: square; /* Replace bullets with squares */
+}
+
+ol li:nth-child(odd) {
+    background-color: #eeeeee; /* Background for odd list items */
+}
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove bullets from the navigation list */
+    padding : 0; /* Remove default padding */
+}
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    background-color: #dddddd; /* Background color for links */
+    border: 1px solid #cccccc; /* Border for links */
+    padding: 5px 10px; /* Padding for links */
+    color: black; /* Text color for links */
+    display: inline-block; /* Display links in a line */
+    margin-right: 5px; /* Spacing between links */
+}
+
+nav a:hover, nav a:focus {
+    background-color: #bbbbbb; /* Change background color on hover/focus */
+}
+    

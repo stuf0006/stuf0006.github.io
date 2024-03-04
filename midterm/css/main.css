@@ -1,0 +1,150 @@
+/* Background-color */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #aad4cf; /* Sets the background color of the body */
+  }
+  
+  /* ContainerDivs */
+  .container {
+    width: 70%; /* Sets the width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    border: 0px solid black; /* Border for visualization */
+  }
+  .innercontain {
+    background-color: #D4E9E7; /* Sets the background color of the inner container */
+    width: 100%; /* Sets the width of the inner container */
+    height: auto; /* Allows the height of the inner container to adjust automatically */
+  }
+  /* End ContainerDivs */
+  
+  /* Header */
+  header {
+    position: relative; /* Sets the position of the header */
+    margin-bottom: -5px; /* Negative margin to overlap with the content below */
+  }
+  header img {
+    width: 100%; /* Sets the width of the header image to 100% */
+    height: auto; /* Allows the height of the header image to adjust automatically */
+  }
+  .site-title {
+    position: absolute; /* Sets the position of the site title */
+    top: 50%; /* Aligns the title vertically */
+    left: 50%; /* Aligns the title horizontally */
+    transform: translate(-50%, -50%); /* Centers the title using translate */  
+    color: white; /* Sets the color of the site title */
+    font-size: 24px; /* Sets the font size of the site title */
+  }
+  /* End Header */
+  
+  /* Nav */
+  nav {
+    width: 100%; /* Sets the width of the navigation */
+  }
+  nav ul {
+    display: flex; /* Displays navigation items in a flexbox layout */
+    justify-content: center; /* Centers the navigation horizontally */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Removes default list styles */
+  }
+  nav li {
+    flex-grow: 1; /* Allows navigation items to grow */
+    position: relative;
+  }
+  nav a {
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid black; /* Adds a border between navigation items */
+    font-size: 25px; /* Increases text size */
+    font-weight: bold; /* Makes text bold */
+    text-align: center; /* Centers text inside the container */
+  }
+  nav a:last-child {
+    border-right: none; /* Removes border from the last navigation item */
+  }
+  nav li:not(:last-child)::after {
+    content: ""; /* Creates a pseudo-element for vertical divider */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 1px;
+    background-color: black; /* Sets the color of the vertical divider */
+  }
+  /* End Nav */
+  
+  /* Article */
+  .article,
+  .facts,
+  .form {
+    padding: 10px; /* Adds padding around article, facts, and form */
+  }
+  .article img {
+    float: left; /* Floats images to the left */
+    margin-right: 20px; /* Adds margin to the right of the images */
+    margin-bottom: 20px; /* Adds margin below the images */
+    max-width: 200px; /* Sets the maximum width of the images */
+    height: auto; /* Allows the height of the images to adjust automatically */
+    word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  }
+  /* End Article */
+  
+  /* Form */
+  .form-container {
+    margin: 20px auto; /* Centers the form horizontally */
+    padding: 20px;
+    border: 1px solid black; /* Adds border around the form */
+  }
+  .form-group {
+    margin-bottom: 20px; /* Adds spacing between form elements */
+  }
+  label {
+    display: block;
+    margin-bottom: 5px; /* Adds spacing between labels and input fields */
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Makes input fields full-width within their containers */
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Includes padding and border in the width */
+  }
+  .radio-group {
+    display: flex; /* Aligns radio buttons in one line */
+    align-items: center; /* Vertically centers radio buttons with labels */
+  }
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px; /* Adds spacing between radio button options */
+    margin-top: -6px; /* Adjusts vertical alignment of radio buttons */
+  }
+  button {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #ccc; /* Changes background color on hover */
+  }
+  /* End Form */
+  
+  /* Footer */
+  footer {
+    text-align: right; /* Aligns text to the right side */
+    padding: 5px;
+    padding-right: 50px; /* Adds right padding to the footer */
+    margin-bottom: 10px; /* Adds bottom margin to the footer */
+  }
+  /* End Footer */
+  
+  
+  

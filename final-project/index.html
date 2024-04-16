@@ -5,10 +5,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stuf0006 final-project</title>
-    
+    <title>final-project</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="wrapper">
     <div class="container">
         <header> <!--Header -->
             <div class="logo">
@@ -31,23 +32,29 @@
         </header>
         <section id="welcome-section"><!-- Welcome section -->
             <img src="images/main-banner.jpg" alt="about-us image ">
+            <div class="content">
             <h1 class="site-title">Welcome to Three Star Media</h1>
             <!--Paragraph containing the content of the abous-us message-->
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Autem blanditiis saepe officiis? Quae, 
              eum natus reiciendis atque a doloribus quia obcaecati impedit temporibus delectus laborum sed enim consequatur.</p>
-            
             <button class="connect-button" >Connect with Us  <i class="fa-solid fa-caret-right"></i> </button>
+        </div>
         </section>
         <section id="about-section" ><!-- About section -->
-            <div class="about-content"><!-- About section content-->
+            <div class="about-content"><!-- About section 
+                content-->
+                 <img src="images/about-us.jpg" alt="about-us image ">
+                 <div>
                 <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Autem blanditiis saepe officiis? Quae, 
-                    eum natus reiciendis atque a doloribus quia obcaecati impedit temporibus delectus laborum sed enim consequatur nesciunt facilis.
-                    reprehenderit rem excepturi quis iure? Architecto nulla voluptate voluptas harum.</p>
+                    eum natus reiciendis atque a doloribus quia obcaecati.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Autem blanditiis saepe officiis? Quae, 
+                        eum natus reiciendis atque a doloribus quia obcaecati impedit temporibus .</p>
+                </div>   
             </div>
-            <img src="images/about-us.jpg" alt="about-us image ">
-        </section>
+            </section>
         <section id="services-section"><!-- Services section -->
             <h2>Our Services</h2>
             <div class="service-cards"><!-- Services Card with content -->
@@ -114,38 +121,28 @@
         </section>
         <section id="team-section"><!-- Our Team Section -->
             <h1>Our Team</h1>
-            <table class="our-team-table"><!-- Our Team Section -->
-                <tr><!-- Team Member 1 -->
-                    <td>
-                        <img src="images/john.jpg" alt="Team Member 1">
-                    </td>
-                    <td>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/john.jpg" alt="Team Member 1">
+                    <div class="team-member-info">
                         <h2 class="team-member-heading">John Doe</h2>
                         <span>CEO and CO-owner</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,<br>itaque atque praesentium quam natus est quasi fuga iure exercitationem doloremque</p>
-
-                    </td>
-                </tr>
-                <tr><!-- Team Member 2 -->
-                    <td >
+                    </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/bob.jpg" alt="Team Member 2">
+                        <div class="team-member-info">
                         <h2 class="team-member-heading">Bob Rite</h2>
                         <span>CFO and Co-owner</span>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,<br>itaque atque praesentium quam natus est quasi fuga iure exercitationem doloremque</p>
-                    </td>
-                    <td>
-                        <img src="images/bob.jpg" alt="Team Member 2">
-                    </td>
-                </tr>
-                <!-- Add more team members here -->
-            </table>
+                    </div>
+                </div>
         </section>
         <section id="contact-section"><!-- Contact Us Section -->
             <h1>Contact Us</h1>
-            <table class="contact-map">
-                <tr>
-                    <td><!-- Form -->
                         <form>
                             <h3>Send us a message</h3>
                             <label for="name">Full Name:</label><br>
@@ -156,36 +153,46 @@
                             <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
                             <input type="submit"  value="Send">
                         </form>
-                    </td>
-                    <td><!-- MAP -->
+                    
+                        <section id="operation"class="contact-info" ><!-- operation section -->
+                            <div class="hours-wrapper">
+                                <div class="header-wrapper">
+                            <h1>Hours of operation</h1>
+                        </div>
+                        <div class="table-wrapper">
+                            <table >
+                                <tr ><!-- table header -->
+                                  <th>Days</th>
+                                  <th>Hours</th>
+                                </tr>
+                                <tr><!-- table content -->
+                                  <td>Monday - Friday</td>
+                                  <td>9AM - 6PM</td>
+                                </tr>
+                                <tr><!-- table content -->
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                  </tr>
+                              </table>
+                            </div>
+                        </div>
+                            <div class="location-wrapper">
+                                <div class="header-wrapper">
                          <h3>Location</h3>
+                        </div>
+                        <div class="map-wrapper">
                          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156963!2d-75.75943181114503!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556602295!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-                    </td>
-                </tr>
-            </table>
+                         </div>
+                        </div>
         </section>
 
-        <section id="operation"><!-- operation section -->
-            <h1>Hours of operation</h1>
-            <table >
-                <tr ><!-- table header -->
-                  <th>Days</th>
-                  <th>Hours</th>
-                </tr>
-                <tr><!-- table content -->
-                  <td>Monday - Friday</td>
-                  <td>9AM - 6PM</td>
-                </tr>
-                <tr><!-- table content -->
-                    <td>Saturday - Sunday</td>
-                    <td>Closed</td>
-                  </tr>
-              </table>
+        
         </section>
         <footer ><!-- Footer section -->
             <p>©Copyright three Star Media,2020</p>
             <p>All images are taken from  <a href="https://Unsplash.com/">Unsplash</a></p>
         </footer>
     </div>
+</div>
 </body>
 </html>

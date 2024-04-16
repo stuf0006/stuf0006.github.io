@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+   
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /* assuming Roboto is the font you want to use */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}     
+      
+header {
+    background-color: #333; 
+    padding: 20px;
+  
+}
+.logo {
+    background-color: #c78c06; /* Gold color for the logo container */
+    padding: 20px; 
+}    
+      
+nav ul {
+    list-style-type: none;
+    text-align: center;
+  
+}
+
+nav a {
+    color:#c78c06;
+    text-decoration: none; 
+    display: block;
+    margin-bottom:30px ;
+}
+     
+.active {
+    background-color: #c78c06;
+    
+    color: #333;
+    padding: 10px; 
+}     
+      
+.search {
+    display: flex;
+
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    width: 100%;
+}
+
+.search button {
+    padding: 10px;
+    background-color: #333;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+#welcome-section {
+    position: relative; 
+    text-align: left; 
+    position: relative; 
+    text-align: left; 
+}
+
+#welcome-section img {
+    width: 100%; 
+    height: 80%; 
+}
+
+.content {
+    position: absolute;  
+    top: 0;  
+    color: white;
+    font-size: 20px;
+}
+
+.site-title {
+    margin: 20px 0; 
+    color: white;
+    font-size: 50px;
+}
+
+.connect-button {
+    padding:  30px; 
+    font-size: 16px; 
+    background-color: #c78c06; 
+    color: #333;
+    border: none; 
+   
+}
+
+.about-content {
+    background-color: #ffe6ac; 
+    padding: 20px ;
+    text-align: left;
+    margin-top: 0;
+}
+.about-content img {
+    
+    display: block; 
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px;  
+}
+
+
+#welcome-section img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.content {
+    position: absolute;  
+    top: 0;  
+    padding: 0 20px; 
+    color: white;
+    font-size: 20px;
+}
+
+.site-title {
+    margin: 20px 0; 
+    color: white;
+    font-size: 50px;
+}
+
+.connect-button {
+    padding:  30px; 
+    font-size: 16px; 
+    background-color: #c78c06; 
+    color: #333;
+    border: none; 
+    margin-top: 20px; 
+}
+
+.about-content {
+    background-color: #ffe6ac; 
+    padding: 20px ;
+    text-align: left;
+    margin-bottom: 0;
+}
+.about-content img {
+    
+    display: block; 
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px;  
+}
+.about-content p {
+    margin-bottom: 20px; 
+}
+
+ .service-card {
+    background-color: #ffe6ac;  
+    text-align: left;
+    margin-bottom: 20px;
+   
+ }     
+      
+ .service-card img {
+    width: 100%; 
+    height: auto;
+ 
+}   
+.service-card  h3{
+    padding: 20px;
+    padding-top: 10px;
+   
+}  
+
+.service-card p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}    
+.button{
+    display: inline-block;
+    padding:  30px; 
+    font-size: 16px; 
+    background-color: #333; 
+    color: white;
+    border: none; 
+    margin: 0 20px;
+    margin-bottom:20px;
+    text-decoration: none;
+}
+
+#our-vision {
+    position: relative; 
+    text-align: left; 
+    position: relative; 
+    text-align: left; 
+}
+
+#our-vision img {
+    width: 100%; 
+    height: 80%; 
+}
+
+.section-content {
+    position: absolute;  
+    top: 0;  
+    color: white;
+    font-size: 20px;
+}
+
+.section-content h1 {
+    margin: 20px ; 
+    color: white;
+    font-size: 50px;
+  
+}
+.section-content p {
+    margin: 20px ; 
+    color: white;
+    font-size: 20px;
+  
+}
+#our-vision .button {
+    padding:  30px; 
+    font-size: 16px; 
+    border: 2px solid #7a7154;
+    background-color: #051d35; 
+}
+.team-member{
+    background-color: #ffe6ac;  
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.team-member img{
+    width: 100%; 
+    height: auto;
+}
+.team-member-heading{
+    padding: 20px;
+    padding-top: 10px;
+}
+.team-member-info p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.team-member-info hr {
+    width: calc(100% - 40px);
+    border: 0; 
+    height: 2px;
+    background-color: #c78c06; 
+    margin: 1em 20px;
+    margin-top: 0;
+} 
+.team-member-info span {
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+#contact-section{
+    padding: 20px;  
+}
+#contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px; 
+ }
+ #contact-section h3 {
+    font-size: 30px;
+    margin-bottom: 10px; 
+ }
+ #contact-section input[type="text"],
+ #contact-section input[type="email"],
+ #contact-section textarea {
+    width: 100%; 
+    padding: 20px;   
+ }
+
+ input[type="submit"][value="Send"] {
+    padding:  10px; 
+    background-color: #333; 
+    color: #c78c06; 
+    border: none; 
+   font-size: 20px;
+   margin-bottom: 20px;
+  }
+  #operation table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background-color: white; 
+    color: #333; 
+    margin-bottom: 20px
+}
+#operation h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#operation th, #operation td {
+    border: 1px solid #333; 
+    padding: 8px; 
+    text-align: left;
+}
+
+#operation th {
+    background-color: #ffe6ac; 
+    color: black; 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+h3.location {
+    font-size: 22px; 
+    margin-bottom: 20px; 
+}
+iframe.gmap {
+    width: 100%; 
+    height: 300px; 
+    border: none; 
+ 
+}
+footer {
+    background-color: #333;
+    color: #c78c06; 
+    padding: 20px 20px;
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+footer p{
+    padding: 20px ;
+}
+footer p:nth-child(2) a {
+    color: #c78c06;  
+}
+
+ @media screen and (min-width: 760px) {
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; 
+        }
+    
+        .logo {
+        
+            padding: 10px; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        nav ul {
+          
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            height: 100%; 
+        }
+    
+        nav ul li {
+            margin: 0 40px; 
+            display: inline-block;
+        }
+    
+        nav a {
+            margin-bottom: 0; 
+            padding: 0;
+        }
+    
+        .search {
+           
+            margin-left: 20px; 
+        }
+    
+        .search input[type="text"] {
+            width: 100%; 
+            padding: 8px;
+        }
+        .search button {
+            padding: 10px;
+        }
+     
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); 
+           margin-left: 20px;
+           margin-right: 20px;
+            padding: 20px;
+            margin-top: 10px;
+           margin-bottom: 20px;
+           
+        }
+    #welcome-section img {
+        margin: 0 auto;
+        height: 400px; 
+      }
+    
+      .content {
+       box-sizing: border-box;
+      }
+    
+      .site-title {
+        font-size: 5rem; 
+        margin: 0; 
+      }
+
+      .connect-button {
+        padding: 30px; 
+        font-size: 1rem; 
+        margin-top: 20px; 
+      }
+     
+      .about-content p{
+    
+      }
+    
+      .about-content img {
+        flex: 1; 
+        height: auto;  
+        max-width: 50%;
+      }
+      
+     
+
+        .about-content {
+          display: flex; 
+          align-items: flex-start; 
+          justify-content: space-between; 
+          padding: 20px; 
+        }
+      
+        .about-content img {
+          flex-shrink: 0; 
+          width: 50%; 
+          height: auto; 
+          margin-right: 20px; 
+        }
+      
+        .about-content > div {
+          flex-grow: 1; 
+       
+          display: flex;
+          flex-direction: column; 
+          justify-content: flex-start; 
+        }
+      
+        .about-content > div > h1, .about-content > div > p {
+          margin: 0; 
+        }
+      
+        .about-content > div > h1 {
+          margin-bottom: 0.5em;  
+        }
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); 
+            gap: 10px; 
+          }
+          .service-cards > .service-card:nth-child(1),
+          .service-cards > .service-card:nth-child(2) {
+            grid-column: span 3; 
+          }
+          .service-cards > .service-card:nth-child(3),
+          .service-cards > .service-card:nth-child(4),
+          .service-cards > .service-card:nth-child(5) {
+            grid-column: span 2; 
+          }
+          .service-card {
+            background-color: #ffe6ac;  
+            text-align: left;
+            margin-bottom: 0; 
+          }
+        
+          .service-card img {
+            width: 100%; 
+            height: auto;
+          }
+        
+          .service-card h3, .service-card p {
+            padding: 20px; 
+          }
+        
+          .service-card p {
+            margin-bottom: 20px; 
+          }
+        
+          .button {
+            display: block; 
+            padding: 15px 30px; 
+            font-size: 16px; 
+            background-color: #333; 
+            color: white;
+            border: none; 
+            margin: 20px; 
+            text-decoration: none;
+          }
+        
+          #our-vision .button {
+            width: 200px;
+        }
+      
+        #our-vision img {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: block;
+        }
+        .team-member {
+            display: flex;  
+          padding: 0;
+          margin: 0;
+        }
+    
+        .team-member img {
+            width: 50%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+    
+        .team-member-info {
+            width: 50%; 
+            padding: 0 20px; 
+            margin-bottom: 20px;
+        }
+    
+        .team-member-heading, .team-member-info span, .team-member-info p {
+            padding: 10px 0;
+        }
+    
+        .team-member-info hr {
+            margin: 10px 0;   
+        }
+        .team-members .team-member:nth-child(2) {  
+            flex-direction: row-reverse;  
+        }
+
+        #contact-section form {
+            width: 50%; 
+           
+        }
+    
+        #contact-section input[type="text"],
+        #contact-section input[type="email"],
+        #contact-section textarea,
+        #contact-section input[type="submit"] {
+            width: 100%; 
+            padding: 10px 20px;
+        }
+    
+        #contact-section input[type="submit"] {
+            width: initial;     
+        }
+       
+        #operation, iframe.gmap {
+            width: 100%; /* Set the width to 50% of the parent container */
+           
+            display: block; /* Block display to center it */
+            margin-left: auto; /* Auto margins to center the map */
+            margin-right: auto;
+            border: 0; 
+        }
+            
+       
+          
+      
+          
+        
+            
+          
+        
+       
+        
+        
+   
+   
+   
+   
+   
+   
+    }
+    

@@ -1460,7 +1460,91 @@ footer p:nth-child(2) a {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    #welcome-section img {
+        margin: 0 auto;
+        height: 400px; 
+      }
+    
+      .content {
+       box-sizing: border-box;
+      }
+      .site-title {
+        font-size: 5rem; 
+        margin: 0; 
+      }
 
+      .connect-button {
+        padding: 30px; 
+        font-size: 1rem; 
+        margin-top: 20px; 
+      }
+    .team-member-info span {
+        padding: 20px;
+        padding-top: 10px;
+        margin-top: 0;
+    }
+    .team-member {
+                display: flex;  
+              padding: 0;
+              margin: 0;
+            }
+        
+            .team-member img {
+                width: 50%; 
+                height: 100%; 
+                object-fit: cover; 
+            }
+        
+            .team-member-info {
+                width: 50%; 
+                padding: 0 20px; 
+                margin-bottom: 20px;
+            }
+        
+            .team-member-heading, .team-member-info span, .team-member-info p {
+                padding: 10px 0;
+            }
+        
+            .team-member-info hr {
+                margin: 10px 0;   
+            }
+            .team-members .team-member:nth-child(2) {  
+                flex-direction: row-reverse;  
+            }
+
+    .team-member-info span {
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+.team-member {
+            display: flex;  
+          padding: 0;
+          margin: 0;
+        }
+    
+        .team-member img {
+            width: 50%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+    
+        .team-member-info {
+            width: 50%; 
+            padding: 0 20px; 
+            margin-bottom: 20px;
+        }
+    
+        .team-member-heading, .team-member-info span, .team-member-info p {
+            padding: 10px 0;
+        }
+    
+        .team-member-info hr {
+            margin: 10px 0;   
+        }
+        .team-members .team-member:nth-child(2) {  
+            flex-direction: row-reverse;  
+        }
     /* Styling changes for site title on larger screens */
     .site-title {
         font-size: 5rem;

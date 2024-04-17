@@ -1603,9 +1603,9 @@ footer p:nth-child(2) a {
         background-position: center;
         display: block;
     }
-
+    /* team section  styles using flex layout to align all content  */
     .team-member-info span {
-        padding: 20px;
+        padding: 20px;  
         padding-top: 10px;
         margin-top: 0;
     }
@@ -1638,6 +1638,7 @@ footer p:nth-child(2) a {
                 flex-direction: row-reverse;  
             }
             
+            /* contact styles for the larger screen  and for field form to take 50%  of the container   */
     #contact-section input[type="text"],
     #contact-section input[type="email"],
     #contact-section textarea,
@@ -1650,7 +1651,7 @@ footer p:nth-child(2) a {
         width: initial;    
  
     }
- 
+  /*  operation styles  to rearrage it to the las */
     #operation {
         display: flex; 
         justify-content: space-between; 

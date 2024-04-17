@@ -1036,13 +1036,554 @@ footer p:nth-child(2) a {
     #contact-section input[type="submit"] {
         width: initial;
     }
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    /* Styling changes for operation section table and Google Maps iframe on larger screens */
-    #operation, iframe.gmap {
-        width: 100%; /* Set the width to 100% of the parent container */
-        display: block; /* Block display to center it */
-        margin-left: auto; /* Auto margins to center the map */
-        margin-right: auto;
-        border: 0;
+/* Wrapper for centralizing content horizontally with some padding */
+.wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Setting basic styles for the entire document */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /*Roboto is the desired font */
+}
+
+/* Container for main content, utilizing flexbox for vertical alignment */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Styling for the header element */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+/* Styling for the logo container */
+.logo {
+    background-color: #c78c06; /* Gold color for the logo container */
+    padding: 20px;
+}
+
+/* Styling for navigation list */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Styling for navigation links */
+nav a {
+    color:#c78c06;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Styling for active navigation link */
+.active {
+    background-color: #c78c06;
+    color: #333;
+    padding: 10px;
+}
+
+/* Styling for search section */
+.search {
+    display: flex;
+}
+
+/* Styling for search input */
+.search input[type="text"] {
+    padding: 8px;
+    width: 100%;
+}
+
+/* Styling for search button */
+.search button {
+    padding: 10px;
+    background-color: #333;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+/* Styling for welcome section */
+#welcome-section {
+    position: relative;
+    text-align: left;
+}
+
+/* Styling for images within the welcome section */
+#welcome-section img {
+    width: 100%;
+    height: 80%;
+}
+
+/* Styling for content within the welcome section */
+.content {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 20px;
+}
+
+/* Styling for site title */
+.site-title {
+    margin: 20px 0;
+    color: white;
+    font-size: 50px;
+}
+
+/* Styling for connect button */
+.connect-button {
+    padding: 30px;
+    font-size: 16px;
+    background-color: #c78c06;
+    color: #333;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Styling for about content */
+.about-content {
+    background-color: #ffe6ac;
+    padding: 20px;
+    text-align: left;
+    margin-top: 0;
+}
+
+/* Styling for images within about content */
+.about-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs within about content */
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* Styling for service cards */
+.service-card {
+    background-color: #ffe6ac;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styling for images within service cards */
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for headings within service cards */
+.service-card h3 {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+/* Styling for paragraphs within service cards */
+.service-card p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for generic button */
+.button {
+    display: inline-block;
+    padding: 30px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Styling for our vision section */
+#our-vision {
+    position: relative;
+    text-align: left;
+}
+
+/* Styling for images within our vision section */
+#our-vision img {
+    width: 100%;
+    height: 80%;
+}
+
+/* Styling for content within our vision section */
+.section-content {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 20px;
+}
+
+/* Styling for headings within section content */
+.section-content h1 {
+    margin: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+/* Styling for paragraphs within section content */
+.section-content p {
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Styling for button within our vision section */
+#our-vision .button {
+    padding: 30px;
+    font-size: 16px;
+    border: 2px solid #7a7154;
+    background-color: #051d35;
+}
+
+/* Styling for team members section */
+.team-member {
+    background-color: #ffe6ac;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Styling for images within team members */
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for headings within team members */
+.team-member-heading {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+/* Styling for information within team members */
+.team-member-info p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for horizontal rule within team members */
+.team-member-info hr {
+    width: calc(100% - 40px);
+    border: 0;
+    height: 2px;
+    background-color: #c78c06;
+    margin: 1em 20px;
+    margin-top: 0;
+}
+
+/* Styling for spans within team members */
+.team-member-info span {
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+/* Styling for contact section */
+#contact-section {
+    padding: 20px;
+}
+
+/* Styling for headings within contact section */
+#contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Styling for headings within contact section */
+#contact-section h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Styling for input fields within contact section */
+#contact-section input[type="text"],
+#contact-section input[type="email"],
+#contact-section textarea {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Styling for submit button within contact section */
+input[type="submit"][value="Send"] {
+    padding: 10px;
+    background-color: #333;
+    color: #c78c06;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for operation section */
+#operation table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for headings within operation section */
+#operation h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Styling for table cells within operation section */
+#operation th, #operation td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styling for table headers within operation section */
+#operation th {
+    background-color: #ffe6ac;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+/* Styling for location headings */
+h3.location {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Styling for Google Maps iframe */
+iframe.gmap {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #333;
+    color: #c78c06;
+    padding: 20px 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs within footer */
+footer p {
+    padding: 20px;
+}
+
+/* Styling for second paragraph link within footer */
+footer p:nth-child(2) a {
+    color: #c78c06;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 760px) {
+    /* Styling changes for header on larger screens */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
+
+    /* Styling changes for logo on larger screens */
+    .logo {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling changes for navigation list on larger screens */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    /* Styling changes for navigation list items on larger screens */
+    nav ul li {
+        margin: 0 40px;
+        display: inline-block;
+    }
+
+    /* Styling changes for navigation links on larger screens */
+    nav a {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    /* Styling changes for search section on larger screens */
+    .search {
+        margin-left: 20px;
+    }
+
+    /* Styling changes for search input on larger screens */
+    .search input[type="text"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Styling changes for search button on larger screens */
+    .search button {
+        padding: 10px;
+    }
+
+    /* Styling changes for content on larger screens */
+    .content {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling changes for site title on larger screens */
+    .site-title {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    /* Styling changes for connect button on larger screens */
+    .connect-button {
+        padding: 30px;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    /* Styling changes for about content on larger screens */
+    .about-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    /* Styling changes for images within about content on larger screens */
+    .about-content img {
+        flex-shrink: 0;
+        width: 50%;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    /* Styling changes for service cards layout on larger screens */
+    .service-cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    /* Styling changes for specific service cards on larger screens */
+    .service-cards > .service-card:nth-child(1),
+    .service-cards > .service-card:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .service-cards > .service-card:nth-child(3),
+    .service-cards > .service-card:nth-child(4),
+    .service-cards > .service-card:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    /* Styling changes for our vision section on larger screens */
+    #our-vision img {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
+
+    /* Styling changes for team members layout on larger screens */
+    .team-member {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Styling changes for images within team members on larger screens */
+    .team-member img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Styling changes for information within team members on larger screens */
+    .team-member-info {
+        width: 50%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling changes for horizontal rule within team members on larger screens */
+    .team-member-info hr {
+        margin: 10px 0;
+    }
+
+    #contact-section input[type="text"],
+    #contact-section input[type="email"],
+    #contact-section textarea,
+    #contact-section input[type="submit"] {
+        width: 100%; 
+        padding: 10px 20px;
+    }
+
+    #contact-section input[type="submit"] {
+        width: initial;    
+ 
+    }
+   
+    #operation {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+    
+    .hours-wrapper, .location-wrapper {
+        flex: 1; 
+        margin: 0 10px; 
+        display: block;
+    }
+    }
+    .header-wrapper h1, .header-wrapper h3 {
+        margin-bottom: 10px; 
+    }
+   
+        iframe.gmap {
+        width: 100%; 
+        height: 400px; 
+        border: 0; 
+    }
+    #operation .location-wrapper {
+        margin-top: -400px;  
+       
+    }
+
 }}
+
